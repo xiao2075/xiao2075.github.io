@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-25T06:32:10.194Z</updated>
+  <updated>2019-04-25T15:25:29.898Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的开始之旅</title>
+    <link href="http://yoursite.com/2019/04/25/hello-essay/"/>
+    <id>http://yoursite.com/2019/04/25/hello-essay/</id>
+    <published>2019-04-25T15:17:55.000Z</published>
+    <updated>2019-04-25T15:25:29.898Z</updated>
+    
+    <content type="html"><![CDATA[<p>从第一次搭建博客到现在已经一年有余了，中间忙忙碌碌，无心记录。经历了2018年的秋招和2019年的春招，我就像一颗尘埃，漂浮不定。临近毕业，时间开始空闲起来，我也可以重新拾起当初的blog。</p><hr><p>一个新的blog，一个新的身份，一个新的生活。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;从第一次搭建博客到现在已经一年有余了，中间忙忙碌碌，无心记录。经历了2018年的秋招和2019年的春招，我就像一颗尘埃，漂浮不定。临近毕业，时间开始空闲起来，我也可以重新拾起当初的blog。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;一个新的blog，一个新的身份，一个新的生活。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello Hexo</title>
