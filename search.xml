@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hello-hexo]]></title>
+    <url>%2F2019%2F04%2F25%2Fhello-hexo%2F</url>
+    <content type="text"><![CDATA[0.hexo博客搭建 1.安装Node.js 和 Git ​ Node.js​ Git (各平台）Git for Windows 2.安装Hexo 1$ npm install -g hexo 3.建站打开git-bash 执行一下命令(folder你选择存放站点的文件) 123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install 建站成功后制定文件下的目录如下: 12345678.├── _config.yml 配置信息├── package.json 应用程序的信息├── scaffolds 模版 文件夹├── source 资源 文件夹| ├── _drafts| └── _posts└── themes 主题 文件夹 4.注册github账号创建repository 名字格式必须为yourname.github.io这里的yourname是指你的github的用户名 5.部署修改hexo中的_config.yml文件修改deploy部分 1234deploy: type: git repository: https://github.com/yourname/yourname.github.io.git branch: master 注意：hexo配置文件中：后面都有一个空格 6.配置SSH Keys使用gIt-bash查看是否存在SSH密钥 1ls -al ~/.ssh 如果不存在，则输入命令 1ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 然后找到密钥文件将密钥添加到你的github中测试是否添加成功的命令 1ssh -T git@github.com 这里当你看到(yes/no)时输入 yes 7.设置用户信息 1234# 设置你的用户名git config --global user.name &quot;hello&quot; # 设置你的邮箱git config --global user.email &quot;hello@gmail.com&quot; 8.完成部署 123hexo generate 生成静态文件hexo deploy 部署网站 到此你就可以yourname.github.io查看啦 注意：每次修改本地文件后，需要键入hexo generate才能保存。每次使用命令时，都要在C:\Hexo目录下。每次想要上传文件到github时，就应该先键入hexo generate保存之后，再键入hexo deploy。]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F04%2F25%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
