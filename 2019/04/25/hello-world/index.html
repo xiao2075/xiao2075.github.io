@@ -11,7 +11,7 @@
     
     Hexo</title>
   
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/kidaha-01.svg">
   
   <link rel="stylesheet" href="/css/style.css">
   
@@ -66,7 +66,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/25/hello-world/" data-id="cjuw17jmd00002kboe1pgtovx" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2019/04/25/hello-world/" data-id="cjuw1qh4u0000h0boab21r8ob" class="article-share-link">分享</a>
       
     </footer>
 
@@ -79,6 +79,26 @@
 
   
     
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: 'b06c1d9d1d744d4e18a4',
+      clientSecret: '5529b3f041629aa966c80fe5da27108f3a6716b7',
+      repo: 'comments# Repository name',
+      owner: '22727823# GitHub ID',
+      admin: ['22727823# GitHub ID'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
   
 
 </article>
@@ -111,7 +131,7 @@
 <nav class="navbar">
   
     <div class="logo">
-      <a href="/"><img src="/images/hexo.svg" alt="Hexo"></a>
+      <a href="/"><img src="/images/monster/kidaha-01.svg" alt="Hexo"></a>
     </div>
   
   <ul class="nav nav-main">
