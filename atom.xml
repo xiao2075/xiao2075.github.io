@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-25T15:53:59.084Z</updated>
+  <updated>2019-04-25T15:55:44.013Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,14 @@
     <link href="http://yoursite.com/2019/04/25/hello-essay/"/>
     <id>http://yoursite.com/2019/04/25/hello-essay/</id>
     <published>2019-04-25T15:17:55.000Z</published>
-    <updated>2019-04-25T15:53:59.084Z</updated>
+    <updated>2019-04-25T15:55:44.013Z</updated>
     
-    <content type="html"><![CDATA[<p>从第一次搭建博客到现在已经一年有余了，中间忙忙碌碌，无心记录。<a id="more"></a>经历了2018年的秋招和2019年的春招，我就像一颗尘埃，漂浮不定。临近毕业，时间开始空闲起来，我也可以重新拾起当初的blog。</p><hr><p>一个新的blog，一个新的身份，一个新的生活。</p>]]></content>
+    <content type="html"><![CDATA[<p>从第一次搭建博客到现在已经一年有余了，中间忙忙碌碌，无心记录。</p><p><a id="more"></a>经历了2018年的秋招和2019年的春招，我就像一颗尘埃，漂浮不定。临近毕业，时间开始空闲起来，我也可以重新拾起当初的blog。</p><hr><p>一个新的blog，一个新的身份，一个新的生活。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;从第一次搭建博客到现在已经一年有余了，中间忙忙碌碌，无心记录。
+      &lt;p&gt;从第一次搭建博客到现在已经一年有余了，中间忙忙碌碌，无心记录。&lt;/p&gt;
+&lt;p&gt;
     
     </summary>
     
