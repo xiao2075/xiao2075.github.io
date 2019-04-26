@@ -9,14 +9,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Mysql中复合索引]]></title>
-    <url>%2F2019%2F04%2F25%2Fmysql-index%2F</url>
-    <content type="text"><![CDATA[0. Mysql 中的联合索引联合索引是指对表上的多个列进行索引。 1. 联合索引的内部结构从本质上来说，联合索引也是一颗B+树，不同的是联合索引的键值的数量不是1，而是大于等于2。 2.讨论两个键值的联合索引2.0 测试采用数据库信息 2.1 表结构与数据1234567891011121314CREATE TABLE t ( id INT AUTO_INCREMENT, a INT, b INT, PRIMARY KEY(id), KEY idx_a_b(a, b))ENGINE=INNODB;INSERT INTO t(a, b) VALUES(1, 1);INSERT INTO t(a, b) VALUES(1, 2);INSERT INTO t(a, b) VALUES(2, 1);INSERT INTO t(a, b) VALUES(2, 4);INSERT INTO t(a, b) VALUES(3, 1);INSERT INTO t(a, b) VALUES(3, 2); 2.3 联合索引的使用情况2.3.1 查询等值（a, b） 结论：使用联合索引(a, b)。 2.3.2 查询等值a 结论：根据最左前缀匹配原则，查询等值a时使用联合索引(a, b)。 2.3.3 查询等值b 2.3.4 查询范围a 2.3.5 查询范围b 2.3.6 查询等值a范围b 2.3.7 查询范围a等值b 2.3.8 查询范围a范围b]]></content>
-      <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hello Hexo]]></title>
     <url>%2F2019%2F04%2F25%2Fhello-hexo%2F</url>
     <content type="text"><![CDATA[0.hexo博客搭建 1.安装Node.js 和 Git ​ Node.js​ Git (各平台）Git for Windows 2.安装Hexo 1$ npm install -g hexo 3.建站打开git-bash 执行一下命令(folder你选择存放站点的文件) 123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install 建站成功后制定文件下的目录如下: 12345678.├── _config.yml 配置信息├── package.json 应用程序的信息├── scaffolds 模版 文件夹├── source 资源 文件夹| ├── _drafts| └── _posts└── themes 主题 文件夹 4.注册github账号创建repository 名字格式必须为yourname.github.io这里的yourname是指你的github的用户名 5.部署修改hexo中的_config.yml文件修改deploy部分 1234deploy: type: git repository: https://github.com/yourname/yourname.github.io.git branch: master 注意：hexo配置文件中：后面都有一个空格 6.配置SSH Keys使用gIt-bash查看是否存在SSH密钥 1ls -al ~/.ssh 如果不存在，则输入命令 1ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 然后找到密钥文件将密钥添加到你的github中测试是否添加成功的命令 1ssh -T git@github.com 这里当你看到(yes/no)时输入 yes 7.设置用户信息 1234# 设置你的用户名git config --global user.name &quot;hello&quot; # 设置你的邮箱git config --global user.email &quot;hello@gmail.com&quot; 8.完成部署 123hexo generate 生成静态文件hexo deploy 部署网站 到此你就可以yourname.github.io查看啦 注意：每次修改本地文件后，需要键入hexo generate才能保存。每次使用命令时，都要在C:\Hexo目录下。每次想要上传文件到github时，就应该先键入hexo generate保存之后，再键入hexo deploy。]]></content>
